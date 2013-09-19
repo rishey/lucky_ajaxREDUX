@@ -3,7 +3,8 @@ $(document).ready(function () {
 		event.preventDefault();
 		var roll = Math.floor(Math.random()*6)+1
 		$.post('/rolls',function(data){
-			$("body").html(data);
+			$("#die").html(data);
+			console.log(data);
 		});
 	})
 
